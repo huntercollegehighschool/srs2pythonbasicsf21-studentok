@@ -31,4 +31,11 @@ diamond(5) -->
 """
 
 def diamond(size):
-  pass  # delete this when you start writing your code
+  string = ""
+  for i in range(size):
+    string = " "*(size-i) 
+    string += "*" 
+    if i != 0:
+      string += " "*i
+      string += "*" 
+    print(string)
