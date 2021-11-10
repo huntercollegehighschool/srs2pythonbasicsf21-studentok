@@ -36,6 +36,14 @@ def diamond(size):
     string = " "*(size-i) 
     string += "*" 
     if i != 0:
-      string += " "*i
+      string += " "*i*2
+      string += "*" 
+    print(string) 
+  for i in range(2,size+1):
+    string = " "*i 
+    string += "*"
+    if i != size:
+      string += " "*(size-i)*2
       string += "*" 
     print(string)
+    
